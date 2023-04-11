@@ -3,7 +3,7 @@ import { JobsContext } from "../../App";
 import FeatureJob from "../FeatureJob/FeatureJob";
 
 const FeaturedJobs = () => {
-  const jobs = useContext(JobsContext || []);
+  const [jobs] = useContext(JobsContext || []);
   const [seeAll, setSeeAll] = useState(false);
   // console.log(seeAll);
 

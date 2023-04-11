@@ -5,7 +5,7 @@ import { addToDb } from "../utilities/fakeDB";
 import { toast } from "react-toastify";
 
 const JobDetails = () => {
-  const allJobs = useContext(JobsContext || []);
+  const [allJobs] = useContext(JobsContext || []);
   const { id: jobID } = useParams();
 
   //   const [job, setJob] = useState({})
@@ -30,25 +30,6 @@ const JobDetails = () => {
 
 const handleApplyNow = appliedJobID =>{
     addToDb(appliedJobID)
-    // let appliedJobs = {}
-
-    // //get the stored jobs from local storage
-    // const storedjobs = localStorage.getItem('applied-jobs')
-    // if (storedjobs) {
-    //   appliedJobs = JSON.parse(storedjobs)
-    // }
-  
-    // // check if applied or not
-    // const timesApplied = appliedJobs[id]
-    // if (timesApplied) {
-    //   toast('already applied')
-    // toast.error("You Have Already applied for This job !", {
-    //     position: toast.POSITION.TOP_CENTER
-    //   });
-    // } else {
-    //   appliedJobs[appliedJobID] = 'applied'
-    // }
-    // localStorage.setItem('applied-jobs', JSON.stringify(appliedJobs))
 }
 
   return (

@@ -9,10 +9,10 @@ export const JobsContext = createContext([])
 
 
 function App() {
-  const {jobs}= useLoaderData()
+  const {jobs,appliedJobs}= useLoaderData()
 
   return (
-    <JobsContext.Provider value={jobs}>
+    <JobsContext.Provider value={[jobs,appliedJobs]}>
      
      <div className='bg-slate-100'>
      <Header></Header>

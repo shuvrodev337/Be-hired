@@ -25,16 +25,30 @@ const addToDb = id => {
   localStorage.setItem('applied-jobs', JSON.stringify(appliedJobs))
 }
 
-const getStoredCart = () => {
-  let shoppingCart = {}
+// const getStoredCart = () => {
+//   let shoppingCart = {}
+
+//   //get the shopping cart from local storage
+//   const storedCart = localStorage.getItem('shopping-cart')
+//   if (storedCart) {
+//     shoppingCart = JSON.parse(storedCart)
+//   }
+//   return shoppingCart
+// }
+const getStoredJobs = () => {
+  let appliedJobs = {}
 
   //get the shopping cart from local storage
-  const storedCart = localStorage.getItem('shopping-cart')
-  if (storedCart) {
-    shoppingCart = JSON.parse(storedCart)
+  const storedJobs = localStorage.getItem('applied-jobs')
+  if (storedJobs) {
+    appliedJobs = JSON.parse(storedJobs)
   }
-  return shoppingCart
+  return appliedJobs
 }
+
+
+
+
 
 const removeFromDb = id => {
   const storedCart = localStorage.getItem('shopping-cart')
@@ -51,4 +65,4 @@ const deleteShoppingCart = () => {
   localStorage.removeItem('shopping-cart')
 }
 
-export { addToDb, getStoredCart, removeFromDb, deleteShoppingCart }
+export { addToDb, getStoredJobs, removeFromDb, deleteShoppingCart }
