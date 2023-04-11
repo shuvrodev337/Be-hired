@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import SingleJobCategory from "../SingleJobCategory/SingleJobCategory";
 
 const JobCategoryList = () => {
+  // const jobCategories = useLoaderData()
+  const [jobCategories, setJobCategories] = useState([])
 
-    const jobCategories = useLoaderData()
-    
+  useEffect(()=>{
+    fetch('jobCategory.json')
+    .then(res=> res.json())
+    .then(data=> setJobCategories(data))
+  },[])
+
+console.log(jobCategories);
+
+  
   return (
     <div className=" mx-auto px-4 py-12  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 items-center">
       <div className="text-center space-y-3">
