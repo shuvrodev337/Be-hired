@@ -15,7 +15,8 @@
         "contactInformation": {
           "phone": "123-456-7890",
           "email": "jobs@abc.com"
-        }
+        },
+        "address": "5678 Data St, New York, NY 67890"
       },
       {
         "id": 2,
@@ -33,7 +34,10 @@
         "contactInformation": {
           "phone": "987-654-3210",
           "email": "careers@xyzanalytics.com"
-        }
+        },
+        "address": "1234 Tech Ave, San Francisco, CA 12345"
+        
+
       },
       {
         "id": 3,
@@ -51,7 +55,8 @@
         "contactInformation": {
           "phone": "555-123-4567",
           "email": "jobs@123solutions.com"
-        }
+        },
+        "address": "1234 Marketing Ave, Chicago, IL 60601"
       },
       {
         "id": 4,
@@ -69,7 +74,8 @@
         "contactInformation": {
           "phone": "456-789-0123",
           "email": "careers@digitalmarketinginc.com"
-        }
+        },
+        "address": "1612 Park St, New York, NY 67890"
       },
       {
         "id": 5,
@@ -77,7 +83,7 @@
         "jobTitle": "Frontend Developer",
         "companyName": "Facebook Inc",
         "remoteOrOnsite": "Remote",
-        "location": "Anywhere",
+        "location": "London, UK",
         "fulltimeOrPartTime": "Full-time",
         "salary": "$80,000 - $100,000 per year",
         "description": "We are seeking a skilled frontend developer to create innovative user interfaces and interactive web experiences. The ideal candidate will have expertise in HTML, CSS, JavaScript, and modern front-end frameworks such as React or Angular.",
@@ -87,7 +93,8 @@
         "contactInformation": {
           "phone": "789-456-1230",
           "email": "careers@webtechsolutions.com"
-        }
+        },
+        "address": "5678 Software St, London SW1A 1AA, UK"
       },
       {
         "id": 6,
@@ -105,7 +112,8 @@
         "contactInformation": {
           "phone": "123-456-7890",
           "email": "careers@datatechsolutions.com"
-        }
+        },
+        "address": "7890 Data Dr, San Francisco, CA 94107, USA"
       }
       
       

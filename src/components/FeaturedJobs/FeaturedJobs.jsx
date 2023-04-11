@@ -22,11 +22,9 @@ const FeaturedJobs = () => {
           ? jobs.map((job) => <FeatureJob key={job.id} job={job}></FeatureJob>)
           : jobs.slice(0, 4).map((job) => <FeatureJob key={job.id} job={job}></FeatureJob>)}
       </div>
-      <div className="flex justify-center items-center h-full">
+      <div className={`flex justify-center items-center h-full ${seeAll ? 'hidden' : '' }`}>
         <button onClick={() => setSeeAll(!seeAll)} className="btn-primary ">
-         {seeAll? 'See Less Jobs' : 'See All Jobs'
-
-         } 
+        See All Jobs
         </button>
       </div>
       
