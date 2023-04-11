@@ -12,7 +12,7 @@
   }
   
   .btn-primary{
-    @apply  font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3  text-lg rounded-xl text-white hover:bg-purple-700 bg-purple-500
+    @apply  font-medium  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3  text-lg rounded-xl text-white  bg-purple-500
   }
 
   .btn-outlined{
