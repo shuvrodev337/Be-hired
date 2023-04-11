@@ -13,7 +13,9 @@ function App() {
   return (
     <JobsContext.Provider value={jobs}>
      
+     <div className='bg-slate-100'>
      <Header></Header>
+     </div>
      <Outlet></Outlet>
     
     </JobsContext.Provider>

@@ -33,7 +33,7 @@ const FeatureJob = ({ job }) => {
       </div>
       
       <Link to={`/job/${id}`}
-       className="font-medium md:mb-0  px-2 py-1 md:py-1 rounded-md text-base text-white bg-purple-500 w-1/3">View Details
+       className="font-medium md:mb-0  px-9 py-2 md:py-2 rounded-md text-base text-white bg-purple-500 w-1/3">View Details
        </Link>
 
     </div>

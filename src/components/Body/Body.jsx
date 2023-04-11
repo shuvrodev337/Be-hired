@@ -9,7 +9,9 @@ const Body = () => {
     return (
         <div>
             
+            <div className='bg-slate-100'>
             <Banner></Banner>
+            </div>
             <JobCategoryList></JobCategoryList>
             <FeaturedJobs></FeaturedJobs>
 
