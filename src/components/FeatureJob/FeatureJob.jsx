@@ -32,8 +32,8 @@ const FeatureJob = ({ job }) => {
       <p className="text-base font-medium text-gray-700 mt-auto">Salary: {salary}</p>
       </div>
       
-      <Link to={`/job/${id}`}
-       className="font-medium md:mb-0  px-9 py-2 md:py-2 rounded-md text-base text-white bg-purple-500 w-1/3">View Details
+      <Link to={`/job/${id}`}>
+        <button className="font-medium md:mb-0  px-9 py-2 md:py-2 rounded-md text-base text-white bg-purple-500 w-1/3">View Details</button>
        </Link>
 
     </div>
