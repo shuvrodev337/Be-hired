@@ -12,7 +12,7 @@ const JobCategoryList = () => {
     .then(data=> setJobCategories(data))
   },[])
 
-console.log(jobCategories);
+// console.log(jobCategories);
 
   
   return (

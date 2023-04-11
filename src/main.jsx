@@ -11,10 +11,12 @@ import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import JobDetails from './components/JobDetails/JobDetails';
 import Statictics from './components/Statistics/Statictics';
 import Blog from './components/Blog/Blog';
+import { getJobsData } from './components/loaders/getJobsData';
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App />,
+    loader:getJobsData ,
     children:[
       {
         path:'/',

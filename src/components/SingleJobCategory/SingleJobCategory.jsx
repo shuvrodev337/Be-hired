@@ -1,7 +1,7 @@
 import React from "react";
 
 const SingleJobCategory = ({ jobCategory }) => {
-  console.log(jobCategory);
+  // console.log(jobCategory);
   const { categoryName, jobsAvailable, imageUrl } = jobCategory;
   return (
     <div className="bg-slate-100 rounded p-6 space-y-2 flex flex-col overflow-hidden">
