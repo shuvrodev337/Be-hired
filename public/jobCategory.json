@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "categoryName": "Software Development",
+      "jobsAvailable": 100,
+      "imageUrl": "https://cdn-icons-png.flaticon.com/512/69/69045.png?w=740&t=st=1681173172~exp=1681173772~hmac=8da167029f26c3d444e025159a07e9dffd7a4f619f8868f59d15fa4a0f2e9cec"
+    },
+    {
+      "id": 2,
+      "categoryName": "Data Science",
+      "jobsAvailable": 50,
+      "imageUrl": "https://cdn-icons-png.flaticon.com/512/1178/1178089.png?w=740&t=st=1681173349~exp=1681173949~hmac=fb1137ddab4438d0f58aa58fb3f1a67407f8b4ce4cfc70d72926e36c6c550f28"
+    },
+    {
+      "id": 3,
+      "categoryName": "Marketing",
+      "jobsAvailable": 75,
+      "imageUrl": "https://cdn-icons-png.flaticon.com/512/1253/1253767.png?w=740&t=st=1681173422~exp=1681174022~hmac=fda641f8b9b0fa3b86757bcc2d7e19cae0a555efc712b2325292e2bed1223299"
+    },
+    {
+      "id": 4,
+      "categoryName": "Customer Service",
+      "jobsAvailable": 30,
+      "imageUrl": "https://cdn-icons-png.flaticon.com/512/62/62667.png?w=740&t=st=1681173496~exp=1681174096~hmac=9d25f7f17f7ec3f8c202c0f33fc9e6b0a821843ccfa4f1124ddf0c52da8f104a"
+    }
+  ]
+  
