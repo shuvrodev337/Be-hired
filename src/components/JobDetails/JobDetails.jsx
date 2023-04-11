@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { JobsContext } from "../../App";
+import { addToDb } from "../utilities/fakeDB";
+import { toast } from "react-toastify";
 
 const JobDetails = () => {
   const allJobs = useContext(JobsContext || []);
@@ -22,8 +24,32 @@ const JobDetails = () => {
     jobTitle,
     contactInformation,
     address,
-    companyName,
+    id
   } = clickedJob;
+
+
+const handleApplyNow = appliedJobID =>{
+    addToDb(appliedJobID)
+    // let appliedJobs = {}
+
+    // //get the stored jobs from local storage
+    // const storedjobs = localStorage.getItem('applied-jobs')
+    // if (storedjobs) {
+    //   appliedJobs = JSON.parse(storedjobs)
+    // }
+  
+    // // check if applied or not
+    // const timesApplied = appliedJobs[id]
+    // if (timesApplied) {
+    //   toast('already applied')
+    // toast.error("You Have Already applied for This job !", {
+    //     position: toast.POSITION.TOP_CENTER
+    //   });
+    // } else {
+    //   appliedJobs[appliedJobID] = 'applied'
+    // }
+    // localStorage.setItem('applied-jobs', JSON.stringify(appliedJobs))
+}
 
   return (
     <>
@@ -81,7 +107,7 @@ const JobDetails = () => {
             </div>
           </div>
           <div className="flex justify-center items-center py-6">
-            <button className="font-medium  py-2  rounded-md text-lg text-white bg-purple-500 w-full">
+            <button onClick={()=>handleApplyNow(id)} className="font-medium  py-2  rounded-md text-lg text-white bg-purple-500 w-full">
               Apply Now
             </button>
           </div>
