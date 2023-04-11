@@ -1,0 +1,113 @@
+ [
+      {
+        "id": 1,
+        "companyLogo": "https://example.com/logo.png",
+        "jobTitle": "Software Engineer",
+        "companyName": "ABC Technologies",
+        "remoteOrOnsite": "Onsite",
+        "location": "New York, NY",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$100,000 - $120,000 per year",
+        "description": "We are seeking a skilled software engineer to join our team and develop cutting-edge software solutions. The ideal candidate will have strong programming skills in Java, experience with web development frameworks such as Spring, and a deep understanding of software design principles.",
+        "responsibilities": "Write clean, maintainable, and efficient code. Collaborate with cross-functional teams to design, develop, and deploy software solutions.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "3+ years of experience in software development",
+        "contactInformation": {
+          "phone": "123-456-7890",
+          "email": "jobs@abc.com"
+        }
+      },
+      {
+        "id": 2,
+        "companyLogo": "https://example.com/logo2.png",
+        "jobTitle": "Data Scientist",
+        "companyName": "XYZ Analytics",
+        "remoteOrOnsite": "Remote",
+        "location": "San Francisco, CA",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$120,000 - $150,000 per year",
+        "description": "We are looking for a skilled data scientist to analyze large datasets and provide insights to support business decision-making. The ideal candidate will have experience with machine learning algorithms, statistical analysis, and data visualization tools.",
+        "responsibilities": "Analyze large datasets, develop and implement machine learning models, provide insights and recommendations to support business decision-making.",
+        "educationalRequirements": "Master's or Ph.D. in Computer Science, Statistics, or related field",
+        "experiences": "5+ years of experience in data science",
+        "contactInformation": {
+          "phone": "987-654-3210",
+          "email": "careers@xyzanalytics.com"
+        }
+      },
+      {
+        "id": 3,
+        "companyLogo": "https://example.com/logo3.png",
+        "jobTitle": "Product Manager",
+        "companyName": "123 Solutions",
+        "remoteOrOnsite": "Onsite",
+        "location": "Chicago, IL",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$90,000 - $110,000 per year",
+        "description": "We are seeking an experienced product manager to drive product strategy and execution. The ideal candidate will have a strong understanding of user experience, market research, and product development lifecycle.",
+        "responsibilities": "Define product strategy, conduct market research, develop product roadmaps, collaborate with cross-functional teams to execute product plans.",
+        "educationalRequirements": "Bachelor's degree in Business, Computer Science, or related field",
+        "experiences": "5+ years of experience in product management",
+        "contactInformation": {
+          "phone": "555-123-4567",
+          "email": "jobs@123solutions.com"
+        }
+      },
+      {
+        "id": 4,
+        "companyLogo": "https://example.com/logo7.png",
+        "jobTitle": "Marketing Officer",
+        "companyName": "DigitalMarketing Inc.",
+        "remoteOrOnsite": "Onsite",
+        "location": "New York, NY",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$70,000 - $90,000 per year",
+        "description": "We are seeking a creative and strategic marketing officer to develop and implement marketing strategies and campaigns. The ideal candidate will have experience in digital marketing, social media management, content creation, and data analysis.",
+        "responsibilities": "Develop and implement marketing strategies and campaigns, manage social media accounts, create engaging content for online and offline marketing channels, analyze marketing data and provide insights.",
+        "educationalRequirements": "Bachelor's degree in Marketing, Business, or related field",
+        "experiences": "2+ years of experience in marketing or related field",
+        "contactInformation": {
+          "phone": "456-789-0123",
+          "email": "careers@digitalmarketinginc.com"
+        }
+      },
+      {
+        "id": 5,
+        "companyLogo": "https://example.com/logo5.png",
+        "jobTitle": "Frontend Developer",
+        "companyName": "WebTech Solutions",
+        "remoteOrOnsite": "Remote",
+        "location": "Anywhere",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$80,000 - $100,000 per year",
+        "description": "We are seeking a skilled frontend developer to create innovative user interfaces and interactive web experiences. The ideal candidate will have expertise in HTML, CSS, JavaScript, and modern front-end frameworks such as React or Angular.",
+        "responsibilities": "Develop responsive and interactive user interfaces, collaborate with designers and back-end developers to implement web designs, optimize website performance.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "2+ years of experience in frontend development",
+        "contactInformation": {
+          "phone": "789-456-1230",
+          "email": "careers@webtechsolutions.com"
+        }
+      },
+      {
+        "id": 6,
+        "companyLogo": "https://example.com/logo6.png",
+        "jobTitle": "Backend Developer",
+        "companyName": "DataTech Solutions",
+        "remoteOrOnsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$90,000 - $120,000 per year",
+        "description": "We are seeking a skilled backend developer to design and develop robust and scalable server-side applications. The ideal candidate will have expertise in Java, Python, or other backend programming languages, along with experience working with databases and APIs.",
+        "responsibilities": "Design, develop, and maintain server-side applications, collaborate with front-end developers and other stakeholders to implement APIs and integrations, optimize application performance and security.",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "3+ years of experience in backend development",
+        "contactInformation": {
+          "phone": "123-456-7890",
+          "email": "careers@datatechsolutions.com"
+        }
+      }
+      
+      
+    ]
+  
