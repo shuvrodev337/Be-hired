@@ -14,8 +14,8 @@ const FeatureJob = ({ job }) => {
     id
   } = job;
   return (
-    <div className="border-2 border-slate-100 rounded-md p-6 space-y-2 flex flex-col overflow-hidden">
-      <img src={companyLogo} className="w-20 h-20 object-cover" alt="company-logo" />
+    <div className="border-2 border-slate-100 rounded-md p-6 space-y-3 flex flex-col overflow-hidden shadow-md bg-slate-100">
+      <img src={companyLogo} className="w-16 h-16 object-cover" alt="company-logo" />
       <h3 className="text-lg font-bold">{jobTitle}</h3>
       <p className="text-base font-medium text-gray-700 mt-auto">
         {companyName}

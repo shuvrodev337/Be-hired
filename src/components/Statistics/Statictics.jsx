@@ -10,33 +10,46 @@ import {
 } from "recharts";
 const Statictics = () => {
   const assignmentMarks = [
-    { assignmentNumber: 1, marks: 60 },
-    { assignmentNumber: 2, marks: 60 },
-    { assignmentNumber: 3, marks: 60 },
-    { assignmentNumber: 4, marks: 60 },
-    { assignmentNumber: 5, marks: 60 },
-    { assignmentNumber: 6, marks: 60 },
-    { assignmentNumber: 7, marks: 60 },
+    { assignmentNumber: 'Assignment-1', marks: 60 },
+    { assignmentNumber: 'Assignment-2', marks: 60 },
+    { assignmentNumber: 'Assignment-3', marks: 60 },
+    { assignmentNumber: 'Assignment-4', marks: 60 },
+    { assignmentNumber: 'Assignment-5', marks: 60 },
+    { assignmentNumber: 'Assignment-6', marks: 60 },
+    { assignmentNumber: 'Assignment-7', marks: 60 },
   ];
 
   return (
     <>
       <div className="flex justify-center items-center h-full p-20 bg-slate-100 ">
-        <h3 className="text-5xl font-bold">My Assignment Marks</h3>
+        <h3 className="text-5xl font-bold">Statistics</h3>
       </div>
-    <div className="mx-auto px-4 py-12  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24">
-     <ResponsiveContainer width="100%" height={300}>
-      <AreaChart width={500} height={200} data={assignmentMarks}>
-      <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="assignmentNumber" />
-        <YAxis dataKey="marks" />
-        <Tooltip />
-        <Area type="monotone" dataKey="marks" stroke="#8884d8" fill="#8884d8" />
-      </AreaChart>
-    </ResponsiveContainer>
-   </div>
+      <div className="text-center space-y-3 py-4 bg-slate-100 ">
+      <h3 className="text-2xl font-bold">My Assignment Marks</h3>
+      <p className="text-base font-medium text-gray-700 mt-auto">
+        Total assignments: 7
+      </p>
+      <p className="text-base font-medium text-gray-700 mt-auto">
+        Average mark: 60/60
+      </p>
+      </div>
+      <div className="mx-auto px-4 py-12  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24">
+        <ResponsiveContainer width="100%" height={300}>
+          <AreaChart width={500} height={200} data={assignmentMarks}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="assignmentNumber" />
+            <YAxis dataKey="marks" />
+            <Tooltip />
+            <Area
+              type="monotone"
+              dataKey="marks"
+              stroke="#8884d8"
+              fill="#8884d8"
+            />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
     </>
-   
   );
 };
 
