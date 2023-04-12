@@ -6,7 +6,7 @@ const AppliedJobs = () => {
   const [appliedJobs, setAppliedJobs] = useContext(AppliedJobsContext || []);
 
   const [value, setValue] = useState(null);
-  
+
   let filteredJobs;
 
   if (value) {
@@ -37,9 +37,7 @@ const AppliedJobs = () => {
         : filteredJobs.map((appliedJob) => (
           <AppliedJob key={appliedJob.id} appliedJob={appliedJob}></AppliedJob>
         ))}
-        {/* {appliedJobs.map((appliedJob) => (
-          <AppliedJob key={appliedJob.id} appliedJob={appliedJob}></AppliedJob>
-        ))} */}
+        
       </div>
     </>
   );
@@ -47,28 +45,4 @@ const AppliedJobs = () => {
 
 export default AppliedJobs;
 
-// const [value, setValue] = useState("normal");
 
-//   const handleChange = (event) => {
-//     setValue(event.target.value);
-//   };
-
-// const onsiteJobs = appliedJobs.filter(
-//     (job) => job.remoteOrOnsite === "Onsite"
-//   );
-//   const remoteJobs = appliedJobs.filter(
-//     (job) => job.remoteOrOnsite === "Remote"
-//   );
-
-{
-  /* <div>
-          <label>
-            Filter By:
-            <select value={value} onChange={handleChange}>
-              <option value="onsite">On Site</option>
-
-              <option value="remote">Remote</option>
-            </select>
-          </label>
-        </div> */
-}

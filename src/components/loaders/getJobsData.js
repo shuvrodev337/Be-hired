@@ -1,4 +1,3 @@
-// import { getStoredCart } from '../utils/fakeDB'
 
 import { getStoredJobs } from "../utilities/fakeDB";
 

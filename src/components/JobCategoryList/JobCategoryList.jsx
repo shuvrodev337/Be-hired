@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router-dom";
 import SingleJobCategory from "../SingleJobCategory/SingleJobCategory";
 
 const JobCategoryList = () => {
-  // const jobCategories = useLoaderData()
   const [jobCategories, setJobCategories] = useState([])
 
   useEffect(()=>{
@@ -12,7 +11,6 @@ const JobCategoryList = () => {
     .then(data=> setJobCategories(data))
   },[])
 
-// console.log(jobCategories);
 
   
   return (
