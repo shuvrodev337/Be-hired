@@ -30,7 +30,6 @@ const JobDetails = () => {
 
 
 const handleApplyNow = appliedJob =>{
-    // addToDb(appliedJobID)
     let newAppliedJobs = []
     const exists = appliedJobs.find(existingJob => existingJob.id === appliedJob.id)
     if (!exists) {
