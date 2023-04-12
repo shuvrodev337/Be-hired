@@ -7,11 +7,11 @@ export const getJobsData = async () => {
   const jobs = await jobsData.json();
 
   const storedJobs = getStoredJobs()
-  const appliedJobs=[]
+  const iniTialAppliedJobs=[]
   for (const id in storedJobs) {
     const appliedJob = jobs.find(job=> job.id == id)
-    appliedJobs.push(appliedJob)
+    iniTialAppliedJobs.push(appliedJob)
   }
 
-  return { jobs , appliedJobs};
+  return { jobs , iniTialAppliedJobs};
 };

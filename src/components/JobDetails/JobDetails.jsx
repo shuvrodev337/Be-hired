@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { JobsContext } from "../../App";
+import { AppliedJobsContext, JobsContext } from "../../App";
 import { addToDb } from "../utilities/fakeDB";
 import { toast } from "react-toastify";
 
 const JobDetails = () => {
-  const [allJobs] = useContext(JobsContext || []);
+  const allJobs = useContext(JobsContext || []);
+  const [appliedJobs, setAppliedJobs] = useContext(AppliedJobsContext || []);
   const { id: jobID } = useParams();
 
   //   const [job, setJob] = useState({})
@@ -28,8 +29,18 @@ const JobDetails = () => {
   } = clickedJob;
 
 
-const handleApplyNow = appliedJobID =>{
-    addToDb(appliedJobID)
+const handleApplyNow = appliedJob =>{
+    // addToDb(appliedJobID)
+    let newAppliedJobs = []
+    const exists = appliedJobs.find(existingJob => existingJob.id === appliedJob.id)
+    if (!exists) {
+      newAppliedJobs = [...appliedJobs , appliedJob]
+    }else{
+      const rest = appliedJobs.filter(existingJob=> existingJob.id !== appliedJob.id)
+      newAppliedJobs = [...rest, exists]
+    }
+    setAppliedJobs(newAppliedJobs)
+    addToDb(appliedJob.id)
 }
 
   return (
@@ -88,7 +99,7 @@ const handleApplyNow = appliedJobID =>{
             </div>
           </div>
           <div className="flex justify-center items-center py-6">
-            <button onClick={()=>handleApplyNow(id)} className="font-medium  py-2  rounded-md text-lg text-white bg-purple-500 w-full">
+            <button onClick={()=>handleApplyNow(clickedJob)} className="font-medium  py-2  rounded-md text-lg text-white bg-purple-500 w-full">
               Apply Now
             </button>
           </div>
