@@ -5,7 +5,6 @@ import FeatureJob from "../FeatureJob/FeatureJob";
 const FeaturedJobs = () => {
   const jobs = useContext(JobsContext || []);
   const [seeAll, setSeeAll] = useState(false);
-  // console.log(seeAll);
 
   
   return (
@@ -14,10 +13,10 @@ const FeaturedJobs = () => {
         <h3 className="text-5xl font-bold">Featured Jobs</h3>
         <p className="text-base font-medium text-gray-700">
           Explore thousands of job opportunities with all the information you
-          need. Its your future
+          need. These are the featured jobs below.
         </p>
       </div>
-      <div className="sm:space-y-4 md:grid grid-cols-2 gap-4 py-8 items-baseline">
+      <div className="space-y-4 md:grid grid-cols-2 gap-4 py-8 items-baseline">
         {seeAll
           ? jobs.map((job) => <FeatureJob key={job.id} job={job}></FeatureJob>)
           : jobs.slice(0, 4).map((job) => <FeatureJob key={job.id} job={job}></FeatureJob>)}

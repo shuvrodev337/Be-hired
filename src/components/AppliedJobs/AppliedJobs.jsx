@@ -6,41 +6,13 @@ const AppliedJobs = () => {
   const [appliedJobs, setAppliedJobs] = useContext(AppliedJobsContext || []);
 
   const [value, setValue] = useState(null);
+  
   let filteredJobs;
 
   if (value) {
     const filteredAppliedJobs= appliedJobs.filter(job => job.remoteOrOnsite === value)
-
-    // setAppliedJobs(filteredAppliedJobs)
-
-    console.log(filteredAppliedJobs);
     filteredJobs= filteredAppliedJobs
   } 
-  // let allAppliedJobs = [...appliedJobs];
-  // let onsiteJobs;
-  // let remoteJobs;
-
-  // const handleChange = (event) => {
-  //   setValue(event.target.value);
-
-  //   if (value === "onsite") {
-  //     console.log('hello onsite');
-  //     onsiteJobs = allAppliedJobs.filter((job) => job.remoteOrOnsite === "Onsite");
-  //     setAppliedJobs(onsiteJobs);
-  //   } else if (value === "remote") {
-  //     console.log("hello remote");
-
-  //     remoteJobs = allAppliedJobs.filter((job) => job.remoteOrOnsite === "Remote");
-  //     setAppliedJobs(remoteJobs);
-  //   }
-  // };
-
-  // const onsiteJobs = appliedJobs.filter(
-  //     (job) => job.remoteOrOnsite === "Onsite"
-  //   );
-  // const remoteJobs = appliedJobs.filter(
-  //   (job) => job.remoteOrOnsite === "Remote"
-  // );
 
   return (
     <>

@@ -10,13 +10,13 @@ import {
 } from "recharts";
 const Statictics = () => {
   const assignmentMarks = [
-    { assignmentNumber: 'Assignment-1', marks: 60 },
-    { assignmentNumber: 'Assignment-2', marks: 60 },
-    { assignmentNumber: 'Assignment-3', marks: 60 },
-    { assignmentNumber: 'Assignment-4', marks: 60 },
-    { assignmentNumber: 'Assignment-5', marks: 60 },
-    { assignmentNumber: 'Assignment-6', marks: 60 },
-    { assignmentNumber: 'Assignment-7', marks: 60 },
+    {id:1, assignmentName: 'Assignment-1', marks: 60 },
+    {id:2, assignmentName: 'Assignment-2', marks: 60 },
+    {id:3, assignmentName: 'Assignment-3', marks: 60 },
+    {id:4, assignmentName: 'Assignment-4', marks: 60 },
+    {id:5, assignmentName: 'Assignment-5', marks: 60 },
+    {id:6, assignmentName: 'Assignment-6', marks: 60 },
+    {id:7, assignmentName: 'Assignment-7', marks: 60 },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Statictics = () => {
         <ResponsiveContainer width="100%" height={300}>
           <AreaChart width={500} height={200} data={assignmentMarks}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="assignmentNumber" />
+            <XAxis dataKey="assignmentName" />
             <YAxis dataKey="marks" />
             <Tooltip />
             <Area

@@ -7,7 +7,8 @@
 * Dynamic Job details section
 * use of context api.
 * Apply for job functionality from job detail page
-* Applied jobs page functionality
+* Applied jobs page
+* Filter jobs functionality
 
 ## Live Link
 Hosted in Surge -> [BeHired](http://economic-loss.surge.sh/)

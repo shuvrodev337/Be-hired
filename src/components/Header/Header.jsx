@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="md:flex items-center justify-between ">
         <h3 className="font-bold hover:text-purple-600 text-5xl">BeHired</h3>
        
-        <ul className=" lg:flex gap-3">
+        <ul className="space-y-2 py-2 lg:flex gap-3">
         <li>
             <NavLink
               to="/"
