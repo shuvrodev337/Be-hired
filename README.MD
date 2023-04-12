@@ -8,3 +8,6 @@
 * use of context api.
 * Apply for job functionality from job detail page
 * Applied jobs page functionality
+
+## Live Link
+Hosted in Surge -> [BeHired](http://economic-loss.surge.sh/)
